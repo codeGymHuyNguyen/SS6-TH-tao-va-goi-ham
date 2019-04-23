@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkTypeofInput(input) {
+        let check = false;
+        if (input == parseInt(input)) {
+            check = true;
+        }
+        return check;
+    }
+    let inputNumber = prompt('Input text:');
+    let result = checkTypeofInput(inputNumber);
+    if (result === true){
+        alert(inputNumber + ' is a number') ;
+    } else {
+        alert(inputNumber + ' is NOT a number');
+    }
+</script>
+</body>
+</html>

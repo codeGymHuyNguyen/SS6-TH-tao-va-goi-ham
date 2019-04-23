@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function createArray(array) {
+        let length = parseInt(prompt('Input array length'));
+        array = [];
+        for (let i = 0; i < length ; i++){
+            let number = parseInt(prompt('Input number to array'));
+            array.push(number);
+        }
+        return array;
+    }
+    function reverseArray(){
+        let result;
+        result = createArray().reverse();
+        return result;
+    }
+    alert('Array after reverse is: ' + reverseArray());
+</script>
+</body>
+</html>

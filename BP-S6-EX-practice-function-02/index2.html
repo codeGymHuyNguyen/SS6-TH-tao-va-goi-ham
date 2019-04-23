@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result;
+    function calcAreaCircle(radius) {
+        result = radius * radius * 3.14;
+        return result;
+    }
+    function calcCirumferenceCircle(radius) {
+        result = radius * 2 * 3.14;
+        return result;
+    }
+    let radius = parseInt(prompt('Input radius of circle'));
+    let AreaCircle = calcAreaCircle(radius);
+    let CircumferenceCircle = calcCirumferenceCircle(radius);
+    alert('Area of circle is ' + AreaCircle);
+    alert('Circumference of circle is ' + CircumferenceCircle);
+</script>
+</body>
+</html>

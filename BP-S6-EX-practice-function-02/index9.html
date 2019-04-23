@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkArray(text) {
+        let char = prompt('Input character');
+        let count = 0;
+        for (let i = 0; i < text.length; i++) {
+            if (char === text[i]){
+                count += 1;
+            } else {
+                count = -1;
+            }
+        }
+        return count;
+    }
+    let text = prompt('Input array');
+    let result = checkArray(text);
+    alert(result);
+</script>
+</body>
+</html>

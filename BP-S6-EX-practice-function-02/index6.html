@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function compareWithZero(number) {
+        let result = '';
+        if (number < 0 ){
+            result = number + ' is negative integer';
+        } else if (number > 0) {
+            result = number + ' is positive integer';
+        } else {
+            result = number + ' = 0';
+        }
+        return result;
+    }
+    let number = parseInt(prompt('Input number'));
+    let result = compareWithZero(number);
+    alert(result);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function calcFactorial(number) {
+        let result = 1;
+        for (let i = 1; i <= number; i++) {
+            result *= i;
+        }
+        return result;
+    }
+    let number = parseInt(prompt('Input number:'));
+    let result = calcFactorial(number);
+    alert(result);
+</script>
+</body>
+</html>
